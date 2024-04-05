@@ -6,6 +6,8 @@ public class Studierender {
 
     public String frageStellen(Dozierender d1){
 
+        //test
+        String frage = "";
         return frage;
     }
 }
