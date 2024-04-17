@@ -17,7 +17,7 @@ public class Studierender {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Stellen Sie Ihre Frage an den Adozierenden: ");
         String frage = myScanner.nextLine();
-        dozierender.frageBeantworten(frage);
+        dozierender.frageBeantworten();
     }
     // public String frageStellen(){
 

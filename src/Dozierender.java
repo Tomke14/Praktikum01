@@ -23,13 +23,13 @@ public class Dozierender {
         }
     }
 
-    public String frageBeantworten (String frage) {
+    public String frageBeantworten () {
         String antwort = "antwort";
         return antwort;
     }
 
     public String terminBestatigen (String termin) {
-        String antwort = "ja";
+        String antwort = "Ja, ich freue mich auf Sie :).";
         return antwort;
     }
     

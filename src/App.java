@@ -16,6 +16,8 @@ public class App {
 
        Studierender Studi1 = new Studierender("Tomke", 1234, "UXD");
         Studi1.frageStellen(null);
+
+        Miller.frageBeantworten();
         
     }
 }
