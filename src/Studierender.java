@@ -24,7 +24,7 @@ public class Studierender {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Stellen Sie Ihre Frage an den Adozierenden: ");
         String frage = myScanner.nextLine();
-        dozierender.beantworten(frage);
+        dozierender.frageBeantworten(frage);
     }
     // public String frageStellen(){
 
@@ -37,11 +37,11 @@ public class Studierender {
     //     return frage;
     // }
 
-    public void sprechstundenanfrage(Dozierender dozierender, String termin) {
+    public void sprechstundenAnfrage(Dozierender dozierender, String termin) {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Vereinbaren Sie einen Termin mit dem Dozierenden: ");
         termin = myScanner.nextLine();
-        dozierender.terminBestaetigen(termin);
+        dozierender.terminBestatigen(termin);
     }
     // public String sprechstundenanfrage(){
 
