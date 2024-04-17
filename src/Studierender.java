@@ -15,20 +15,11 @@ public class Studierender {
     }
     public void frageStellen(Dozierender dozierender) {
         Scanner myScanner = new Scanner(System.in);
-        System.out.print("Stellen Sie Ihre Frage an den Adozierenden: ");
+        System.out.print("Stellen Sie Ihre Frage an den Dozierenden: ");
         String frage = myScanner.nextLine();
         dozierender.frageBeantworten(frage);
     }
-    // public String frageStellen(){
 
-    //     Scanner myScanner = new Scanner(System.in);  // Create a Scanner object
-    //     System.out.print("Stellen Sie ihre Frage: ");
-
-    //     String frage = myScanner.nextLine();  // Read user input
-    //     System.out.println("Ihre Frage lautet: " + frage);  // Output user input
-        
-    //     return frage;
-    // }
 
     public void sprechstundenAnfrage(Dozierender dozierender, String termin) {
         Scanner myScanner = new Scanner(System.in);
@@ -36,13 +27,7 @@ public class Studierender {
         termin = myScanner.nextLine();
         dozierender.terminBestatigen(termin);
     }
-    // public String sprechstundenanfrage(){
 
-    //     Scanner myScanner = new Scanner(System.in);  // Create a Scanner object
-    //     String anfrage = myScanner.nextLine();  // Read user input
-    //     return anfrage;
-
-    // }
 
     public String getName() {
         return name;
