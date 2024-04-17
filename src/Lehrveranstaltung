@@ -1,0 +1,93 @@
+public class Course {
+    private String titel;
+    private String dozierende;
+    private List<String> studierende;
+    private int vorlesungsstunden;
+    private int praktikumsstunden;
+
+    // Constructor
+    public Course(String titel, String dozierende, List<String> studierende, int vorlesungsstunden, int praktikumsstunden) {
+        this.title = titel;
+        this.dozierende = dozierende;
+        this.studierende = studierende;
+        this.vorlesungsstunden = vorlesungsstunden;
+        this.praktikumsstunden = praktikumsstunden;
+    }
+
+    public void addStudierende(String studierendeName) {
+        studierende.add(studierendeName);
+    }
+
+    public void removeStudierende(String studierendeName) {
+        studierende.remove(studierendeName);
+    }
+
+    public void addVorlesungsstunde() {
+        vorlesungsstunden++;
+    }
+
+    public void deleteVorlesungsstunde() {
+        if (vorlesungsstunden > 0) {
+            vorlesungsstunden--;
+        }
+    }
+
+    public void addPraktikumsstunde() {
+        praktikumsstunden++;
+    }
+
+    public void deletePraktikumsstunde() {
+        if (praktikumsstunden > 0) {
+            praktikumsstunden--;
+        }
+    }
+
+    public void showLectureDetails() {
+        System.out.println("Lecture Details:");
+        System.out.println("Title: " + titel);
+        System.out.println("Instructor: " + dozierende);
+        System.out.println("Number of Lecture Hours: " + vorlesungsstunden);
+        System.out.println("Number of Lab Hours: " + praktikumsstunden);
+    }
+
+    // Getters and setters
+    public String getTitel() {
+        return titel;
+    }
+
+    public void setTitel(String titel) {
+        this.titel = titel;
+    }
+
+    public String getDozierende() {
+        return dozierende;
+    }
+
+    public void setDozierende(String dozierende) {
+        this.dozierende = dozierende;
+    }
+
+    public List<String> getStudierende() {
+        return studierende;
+    }
+
+    public void setStudierende(List<String> studierende) {
+        this.studierende = studierende;
+    }
+
+    public int getVorlesungsstunden() {
+        return vorlesungsstunden;
+    }
+
+    public void setVorlesungsstunden(int vorlesungsstunden) {
+        this.vorlesungsstunden = vorlesungsstunden;
+    }
+
+    public int getLabHours() {
+        return labHours;
+    }
+
+    public void setPraktikumsstunden(int praktikumsstunden) {
+        this.praktikumsstunden = praktikumsstunden;
+    }
+}
