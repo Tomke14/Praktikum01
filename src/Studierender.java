@@ -7,13 +7,6 @@ public class Studierender {
     private int matrikelnummer;
     private String studiengang;
 
-    public static void main(String[] args) throws Exception {
-        
-        Studierender Studi1 = new Studierender("Tomke", 1234, "UXD");
-        Studi1.frageStellen(null);
-        
-    }
-
     
     public Studierender(String name, int matrikelnummer, String studiengang) {
         this.name = name;
