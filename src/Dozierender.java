@@ -7,12 +7,6 @@ public class Dozierender {
     private int bureonummer;
     private static int[] feedbackArray = new int[10];
 
-    public static void main(String[] args) {
-    Dozierender Miller = new Dozierender("Miller", "I",23);
-    Miller.feedback();
-    Miller.feedback();
-    Miller.printFeedback(feedbackArray);
-    }
     // anzahlstudis: anzahl der studenten, die Feedbak gegeben haben
     int anzahlstudis = 0; 
     public void feedback () {
@@ -65,7 +59,13 @@ public class Dozierender {
     public void setBureonummer(int bureonummer) {
         this.bureonummer = bureonummer;
     }
-   
+    public int[] getFeedbackArray() {
+    return feedbackArray;
+    }
+
+    public void setFeedbackArray(int[] feedbackArray) {
+    this.feedbackArray = feedbackArray;
+}
 
     
     }
