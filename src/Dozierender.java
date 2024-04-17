@@ -30,7 +30,12 @@ public class Dozierender {
     }
 
     public String frageBeantworten (String frage) {
-        String antwort = "";
+        String antwort = "antwort";
+        return antwort;
+    }
+
+    public String terminBestatigen (String termin) {
+        String antwort = "ja";
         return antwort;
     }
     
