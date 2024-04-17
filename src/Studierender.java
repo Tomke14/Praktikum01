@@ -20,7 +20,12 @@ public class Studierender {
         this.matrikelnummer = matrikelnummer;
         this.studiengang = studiengang;
     }
-
+    public void frageStellen(Dozierender dozierender) {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.print("Stellen Sie Ihre Frage an den Adozierenden: ");
+        String frage = myScanner.nextLine();
+        dozierender.beantworten(frage);
+    }
     public String frageStellen(){
 
         Scanner myScanner = new Scanner(System.in);  // Create a Scanner object
@@ -32,6 +37,12 @@ public class Studierender {
         return frage;
     }
 
+    public void sprechstundenanfrage(Dozierender dozierender, String termin) {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.print("Vereinbaren Sie einen Termin mit dem Dozierenden: ");
+        termin = myScanner.nextLine();
+        dozierender.terminBestaetigen(termin);
+    }
     public String sprechstundenanfrage(){
 
         Scanner myScanner = new Scanner(System.in);  // Create a Scanner object
