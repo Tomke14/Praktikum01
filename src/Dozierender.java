@@ -28,7 +28,7 @@ public class Dozierender {
         return antwort;
     }
 
-    public String terminBestatigen (String termin) {
+    public String terminBestatigen () {
         String antwort = "Ja, ich freue mich auf Sie :).";
         return antwort;
     }

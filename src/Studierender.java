@@ -25,7 +25,7 @@ public class Studierender {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Vereinbaren Sie einen Termin mit dem Dozierenden: ");
         termin = myScanner.nextLine();
-        dozierender.terminBestatigen(termin);
+        dozierender.terminBestatigen();
     }
 
 
