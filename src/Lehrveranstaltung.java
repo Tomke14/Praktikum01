@@ -104,5 +104,6 @@ public class Lehrveranstaltung {
         System.out.println("Studierende: " + studierende);
         System.out.println("Vorlesungsstunden: " + vorlesungsstunden);
         System.out.println("Praktikumsstunden: " + praktikumsstunden);
+        System.out.println();
     }
 }
