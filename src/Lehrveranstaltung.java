@@ -6,11 +6,11 @@ public class Lehrveranstaltung {
     private String titel;
     private String dozierende;
     private List<Studierender> studierende;
-    private int vorlesungsstunden;
-    private int praktikumsstunden;
+    private List<Vorlesungsstunde> vorlesungsstunden;
+    private List<Praktikumsstunde> praktikumsstunden;
 
     // Constructor
-    public Lehrveranstaltung(String titel, String dozierende, List<Studierender>  studierende, int vorlesungsstunden, int praktikumsstunden) {
+    public Lehrveranstaltung(String titel, String dozierende, List<Studierender>  studierende, List<Vorlesungsstunde> vorlesungsstunden, List<Praktikumsstunde> praktikumsstunden) {
         this.titel = titel;
         this.dozierende = dozierende;
         this.studierende = studierende;
@@ -23,28 +23,24 @@ public class Lehrveranstaltung {
         this.studierende.add(studierende);
     }
 
-    public void removeStudierende(String studierendeName) {
-        studierende.remove(studierendeName);
+    public void removeStudierende(Studierender studierende) {
+        studierende.remove(studierende);
     }
 
-    public void addVorlesungsstunde() {
-        vorlesungsstunden++;
+   public void addPraktikumsstunde(Praktikumsstunde praktikumsstunde) {
+        this.praktikumsstunden.add(praktikumsstunde);
     }
 
-    public void deleteVorlesungsstunde() {
-        if (vorlesungsstunden > 0) {
-            vorlesungsstunden--;
-        }
+    public void removePraktikumsstunde(Praktikumsstunde praktikumsstunde) {
+        praktikumsstunden.remove(praktikumsstunde);
     }
 
-    public void addPraktikumsstunde() {
-        praktikumsstunden++;
+    public void addVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
+        this.vorlesungsstunden.add(vorlesungsstunde);
     }
 
-    public void deletePraktikumsstunde() {
-        if (praktikumsstunden > 0) {
-            praktikumsstunden--;
-        }
+    public void removeVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
+        vorlesungsstunden.remove(vorlesungsstunde);
     }
 
     public void showLectureDetails() {
@@ -81,19 +77,19 @@ public class Lehrveranstaltung {
         this.studierende = studierende;
     }
 
-    public int getVorlesungsstunden() {
+    public List<Vorlesungsstunde> getVorlesungsstunden() {
         return vorlesungsstunden;
     }
 
-    public void setVorlesungsstunden(int vorlesungsstunden) {
+    public void setVorlesungsstunden(List<Vorlesungsstunde> vorlesungsstunden) {
         this.vorlesungsstunden = vorlesungsstunden;
     }
 
-    public int getPraktikumsstunden() {
+    public List<Praktikumsstunde> getPraktikumsstunden() {
         return praktikumsstunden;
     }
 
-    public void setPraktikumsstunden(int praktikumsstunden) {
+    public void setPraktikumsstunden(List<Praktikumsstunde> praktikumsstunden) {
         this.praktikumsstunden = praktikumsstunden;
     }
 

@@ -21,19 +21,23 @@ public class App {
         teilnehmerlisteSWE.add(lisa);
         teilnehmerlisteSWE.add(john); // Add new student
 
-        //Lehrveranstaltung
-        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", teilnehmerlisteSWE, 2, 2);
-        softwareentwicklung2LF.printLehrveranstaltung();
 
         //Praktikumsstunde
         String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
       
+        List<Praktikumsstunde> praktikumsstundenListe = new ArrayList<>();
         Praktikumsstunde praktikumsstundeSWE = new Praktikumsstunde("Softwareentwicklung", "17.04.2024", "10:30", "G115", uebungsaufgaben);
+        praktikumsstundenListe.add(praktikumsstundeSWE);
         praktikumsstundeSWE.printPraktikumsstunde();
        
-       //Vorlesungsstunde
+        //Vorlesungsstunde
+        List<Vorlesungsstunde> vorlesungsstundenListe = new ArrayList<>();
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
         softwareentwicklung2.displayDetails();
+
+        //Lehrveranstaltung
+        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", teilnehmerlisteSWE, vorlesungsstundenListe, praktikumsstundenListe);
+        softwareentwicklung2LF.printLehrveranstaltung();
 
     
         max.frageStellen(miller); // ruft frageBeantworten() von Dozierender auf
