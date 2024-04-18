@@ -56,9 +56,6 @@ public class Studierender {
     public void setStudiengang(String studiengang) {
         this.studiengang = studiengang;
     }
-    public void remove(Studierender studierende) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remove'");
-    }
+    
     
 }

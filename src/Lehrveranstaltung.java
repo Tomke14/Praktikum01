@@ -18,30 +18,30 @@ public class Lehrveranstaltung {
         this.praktikumsstunden = praktikumsstunden;
     }
 
+// wurde über Liste gelöst
+//     public void addStudierende(Studierender studierende) {
+//         this.studierende.add(studierende);
+//     }
 
-    public void addStudierende(Studierender studierende) {
-        this.studierende.add(studierende);
-    }
+//     public void removeStudierende(Studierender studierende) {
+//         studierende.remove(studierende);
+//     }
 
-    public void removeStudierende(Studierender studierende) {
-        studierende.remove(studierende);
-    }
+//    public void addPraktikumsstunde(Praktikumsstunde praktikumsstunde) {
+//         this.praktikumsstunden.add(praktikumsstunde);
+//     }
 
-   public void addPraktikumsstunde(Praktikumsstunde praktikumsstunde) {
-        this.praktikumsstunden.add(praktikumsstunde);
-    }
+//     public void removePraktikumsstunde(Praktikumsstunde praktikumsstunde) {
+//         praktikumsstunden.remove(praktikumsstunde);
+//     }
 
-    public void removePraktikumsstunde(Praktikumsstunde praktikumsstunde) {
-        praktikumsstunden.remove(praktikumsstunde);
-    }
+//     public void addVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
+//         this.vorlesungsstunden.add(vorlesungsstunde);
+//     }
 
-    public void addVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
-        this.vorlesungsstunden.add(vorlesungsstunde);
-    }
-
-    public void removeVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
-        vorlesungsstunden.remove(vorlesungsstunde);
-    }
+//     public void removeVorlesungsstunde(Vorlesungsstunde vorlesungsstunde) {
+//         vorlesungsstunden.remove(vorlesungsstunde);
+//     }
 
     public void showLectureDetails() {
         System.out.println("Lehrveranstaltung:");

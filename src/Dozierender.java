@@ -27,7 +27,7 @@ public class Dozierender {
 
     public String frageBeantworten () {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Bitte geben Sie Ihre Antwort ein:");
+        System.out.print("Bitte geben Sie Ihre Antwort ein:");
         String antwort = scanner.nextLine();
         return antwort;
     }

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class App {
@@ -16,10 +15,10 @@ public class App {
         List<Studierender> teilnehmerlisteSWE = new ArrayList<>();
         Studierender max = new Studierender("Max", 12345, "Informatik");
         Studierender lisa = new Studierender("Lisa", 12346, "Informatik");
-        Studierender john = new Studierender("John", 12347, "Informatik"); // New student
+        Studierender john = new Studierender("John", 12347, "Informatik"); 
         teilnehmerlisteSWE.add(max);
         teilnehmerlisteSWE.add(lisa);
-        teilnehmerlisteSWE.add(john); // Add new student
+        teilnehmerlisteSWE.add(john); 
 
 
         //Praktikumsstunde
@@ -46,7 +45,9 @@ public class App {
 
         System.out.println("John wird aus der Lehrveranstaltung entfernt:");
         teilnehmerlisteSWE.remove(john); // Remove new student
-        softwareentwicklung2LF.printLehrveranstaltung();
-
+        System.out.println("Teilnehmerliste:"); // Print updated list
+        for (Studierender studierender : teilnehmerlisteSWE) {
+            System.out.println(studierender.getName());
+        }
     }
 }
