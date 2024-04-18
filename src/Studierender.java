@@ -28,7 +28,11 @@ public class Studierender {
         dozierender.terminBestatigen();
     }
 
-
+    
+    @Override
+    public String toString() {
+        return '\n' + name + ", " + matrikelnummer + ", " + studiengang + '\n';
+    }
     public String getName() {
         return name;
     }

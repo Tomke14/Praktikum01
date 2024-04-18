@@ -22,6 +22,7 @@ public class Dozierender {
         for (int i=0; i<anzahlstudis; i++){
             System.out.println(feedbackArray[i]);
         }
+        System.out.println();
     }
 
     public String frageBeantworten () {

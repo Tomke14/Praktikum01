@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,6 +12,13 @@ public class App {
         miller.feedback();
         miller.printFeedback(miller.getFeedbackArray());
 
+        //Studierender
+        List<Studierender> studierendeList = new ArrayList<>();
+        Studierender max = new Studierender("Max", 12345, "Informatik");
+        Studierender lisa = new Studierender("Lisa", 12346, "Informatik");
+        studierendeList.add(max);
+        studierendeList.add(lisa);
+
 
         //Praktikumsstunde
         String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
@@ -19,9 +27,9 @@ public class App {
         praktikumsstundeSWE.printPraktikumsstunde();
 
         //Lehrveranstaltung
-        String[] studierende = {"Max", "Moritz", "Erika"};
-        List<String> studierendeList = Arrays.asList(studierende);
-        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierende, 2, 2);
+        //String[] studierende = {"Max", "Moritz", "Erika"};
+        //List<String> studierendeList = Arrays.asList(studierende);
+        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierendeList, 2, 2);
         softwareentwicklung2LF.printLehrveranstaltung();
 
        
@@ -29,9 +37,7 @@ public class App {
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
         softwareentwicklung2.displayDetails();
 
-        //Studierender
-        Studierender max = new Studierender("Max", 12345, "Informatik");
-        Studierender moritz = new Studierender("Lisa", 12346, "Informatik");
+    
         max.frageStellen(miller);
         System.out.println(miller.frageBeantworten());
         max.sprechstundenAnfrage(miller, "17.04.2024");

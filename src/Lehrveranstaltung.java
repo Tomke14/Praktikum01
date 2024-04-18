@@ -5,22 +5,22 @@ import java.util.List;
 public class Lehrveranstaltung {
     private String titel;
     private String dozierende;
-    private List<String> studierende;
+    private List<Studierender> studierende;
     private int vorlesungsstunden;
     private int praktikumsstunden;
 
     // Constructor
-    public Lehrveranstaltung(String titel, String dozierende, String[] studierende2, int vorlesungsstunden, int praktikumsstunden) {
+    public Lehrveranstaltung(String titel, String dozierende, List<Studierender>  studierende, int vorlesungsstunden, int praktikumsstunden) {
         this.titel = titel;
         this.dozierende = dozierende;
-        this.studierende = Arrays.asList(studierende2);
+        this.studierende = studierende;
         this.vorlesungsstunden = vorlesungsstunden;
         this.praktikumsstunden = praktikumsstunden;
     }
 
 
-    public void addStudierende(String studierendeName) {
-        studierende.add(studierendeName);
+    public void addStudierende(Studierender studierende) {
+        this.studierende.add(studierende);
     }
 
     public void removeStudierende(String studierendeName) {
@@ -73,11 +73,11 @@ public class Lehrveranstaltung {
         this.dozierende = dozierende;
     }
 
-    public List<String> getStudierende() {
+    public List<Studierender> getStudierende() {
         return studierende;
     }
 
-    public void setStudierende(List<String> studierende) {
+    public void setStudierende(List<Studierender> studierende) {
         this.studierende = studierende;
     }
 
