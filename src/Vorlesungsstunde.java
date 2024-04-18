@@ -12,6 +12,7 @@ public class Vorlesungsstunde {
     }
 
     public void displayDetails() {
+        System.out.println("Vorlesungsstunde:");
         System.out.println("Thema: " + thema);
         System.out.println("Datum: " + datum);
         System.out.println("Uhrzeit: " + uhrzeit);

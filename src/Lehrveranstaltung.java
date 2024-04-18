@@ -48,11 +48,11 @@ public class Lehrveranstaltung {
     }
 
     public void showLectureDetails() {
-        System.out.println("Lecture Details:");
-        System.out.println("Title: " + titel);
-        System.out.println("Instructor: " + dozierende);
-        System.out.println("Number of Lecture Hours: " + vorlesungsstunden);
-        System.out.println("Number of Lab Hours: " + praktikumsstunden);
+        System.out.println("Lehrveranstaltung:");
+        System.out.println("Titel: " + titel);
+        System.out.println("Dozierender: " + dozierende);
+        System.out.println("Vorlesungsstunden: " + vorlesungsstunden);
+        System.out.println("Praktikumsstunden: " + praktikumsstunden);
     }
 
     // Getters and setters

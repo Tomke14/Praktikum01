@@ -6,6 +6,7 @@ public class Praktikumsstunde {
     private String[] aufgaben;
 
     public void printPraktikumsstunde() {
+        System.out.println("Praktikumsstunde:");
         System.out.println("Thema: " + thema);
         System.out.println("Datum: " + datum);
         System.out.println("Uhrzeit: " + uhrzeit);
