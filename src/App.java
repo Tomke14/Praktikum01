@@ -14,7 +14,7 @@ public class App {
 
         //Praktikumsstunde
         String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
-        
+      
         Praktikumsstunde praktikumsstundeStatistik = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", uebungsaufgaben);
         praktikumsstundeStatistik.printPraktikumsstunde();
 
@@ -24,12 +24,6 @@ public class App {
         Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierende, 2, 2);
         softwareentwicklung2LF.printLehrveranstaltung();
 
-        
-        
-        String[] tasks = {"Task 1", "Task 2", "Task 3"};
-        System.out.println("Praktikumsstunde:");
-        Praktikumsstunde p1 = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", tasks);
-        p1.printPraktikumsstunde();
        
        //Vorlesungsstunde
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
