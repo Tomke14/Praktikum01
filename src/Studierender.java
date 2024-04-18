@@ -21,10 +21,10 @@ public class Studierender {
     }
 
 
-    public void sprechstundenAnfrage(Dozierender dozierender, String termin) {
+    public void sprechstundenAnfrage(Dozierender dozierender) {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Vereinbaren Sie einen Termin mit dem Dozierenden: ");
-        termin = myScanner.nextLine();
+        String termin = myScanner.nextLine();
         dozierender.terminBestatigen();
     }
 

@@ -13,23 +13,23 @@ public class App {
         miller.printFeedback(miller.getFeedbackArray());
 
         //Studierender
-        List<Studierender> studierendeList = new ArrayList<>();
+        List<Studierender> teilnehmerlisteSWE = new ArrayList<>();
         Studierender max = new Studierender("Max", 12345, "Informatik");
         Studierender lisa = new Studierender("Lisa", 12346, "Informatik");
-        studierendeList.add(max);
-        studierendeList.add(lisa);
+        Studierender john = new Studierender("John", 12347, "Informatik"); // New student
+        teilnehmerlisteSWE.add(max);
+        teilnehmerlisteSWE.add(lisa);
+        teilnehmerlisteSWE.add(john); // Add new student
 
+        //Lehrveranstaltung
+        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", teilnehmerlisteSWE, 2, 2);
+        softwareentwicklung2LF.printLehrveranstaltung();
 
         //Praktikumsstunde
         String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
       
         Praktikumsstunde praktikumsstundeSWE = new Praktikumsstunde("Softwareentwicklung", "17.04.2024", "10:30", "G115", uebungsaufgaben);
         praktikumsstundeSWE.printPraktikumsstunde();
-
-        //Lehrveranstaltung
-        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierendeList, 2, 2);
-        softwareentwicklung2LF.printLehrveranstaltung();
-
        
        //Vorlesungsstunde
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
@@ -37,7 +37,11 @@ public class App {
 
     
         max.frageStellen(miller); // ruft frageBeantworten() von Dozierender auf
-        max.sprechstundenAnfrage(miller, "17.04.2024"); // ruft terminBestatigen() von Dozierender auf
+        max.sprechstundenAnfrage(miller); // ruft terminBestatigen() von Dozierender auf
+
+        System.out.println("John wird aus der Lehrveranstaltung entfernt:");
+        teilnehmerlisteSWE.remove(john); // Remove new student
+        softwareentwicklung2LF.printLehrveranstaltung();
 
     }
 }
