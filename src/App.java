@@ -27,8 +27,6 @@ public class App {
         praktikumsstundeSWE.printPraktikumsstunde();
 
         //Lehrveranstaltung
-        //String[] studierende = {"Max", "Moritz", "Erika"};
-        //List<String> studierendeList = Arrays.asList(studierende);
         Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierendeList, 2, 2);
         softwareentwicklung2LF.printLehrveranstaltung();
 
@@ -38,10 +36,8 @@ public class App {
         softwareentwicklung2.displayDetails();
 
     
-        max.frageStellen(miller);
-        System.out.println(miller.frageBeantworten());
-        max.sprechstundenAnfrage(miller, "17.04.2024");
-        System.out.println(miller.terminBestatigen());
+        max.frageStellen(miller); // ruft frageBeantworten() von Dozierender auf
+        max.sprechstundenAnfrage(miller, "17.04.2024"); // ruft terminBestatigen() von Dozierender auf
 
     }
 }

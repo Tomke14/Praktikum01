@@ -26,12 +26,22 @@ public class Dozierender {
     }
 
     public String frageBeantworten () {
-        String antwort = "antwort";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bitte geben Sie Ihre Antwort ein:");
+        String antwort = scanner.nextLine();
         return antwort;
     }
-
+    
     public String terminBestatigen () {
-        String antwort = "Ja, ich freue mich auf Sie :).";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Möchten Sie den Termin bestätigen? (Ja/Nein)");
+        String antwort = scanner.nextLine();
+        if (antwort.equalsIgnoreCase("Ja")) {
+            System.out.println("Termin wurde bestätigt.");
+            // Hier können Sie den Termin speichern oder weitere Aktionen durchführen
+        } else {
+            System.out.println("Termin wurde nicht bestätigt.");
+        }
         return antwort;
     }
     
