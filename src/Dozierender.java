@@ -18,7 +18,7 @@ public class Dozierender {
     }
     
     public void printFeedback (int[]feedbackArray){
-        System.out.println("Feedback der Studierenden:")
+        System.out.println("Feedback der Studierenden:");
         for (int i=0; i<anzahlstudis; i++){
             System.out.println(feedbackArray[i]);
         }
