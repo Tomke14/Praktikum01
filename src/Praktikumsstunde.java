@@ -15,6 +15,7 @@ public class Praktikumsstunde {
         for (String aufgabe : aufgaben) {
             System.out.println("- " + aufgabe);
         }
+        System.out.println();
     }
 
     //Konstruktor

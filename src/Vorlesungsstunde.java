@@ -17,6 +17,7 @@ public class Vorlesungsstunde {
         System.out.println("Datum: " + datum);
         System.out.println("Uhrzeit: " + uhrzeit);
         System.out.println("Raum: " + raum);
+        System.out.println();
     }
 
     // Getters and setters for the data fields

@@ -53,6 +53,7 @@ public class Lehrveranstaltung {
         System.out.println("Dozierender: " + dozierende);
         System.out.println("Vorlesungsstunden: " + vorlesungsstunden);
         System.out.println("Praktikumsstunden: " + praktikumsstunden);
+        System.out.println();
     }
 
     // Getters and setters
