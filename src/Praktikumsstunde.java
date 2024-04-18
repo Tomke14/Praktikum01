@@ -65,4 +65,11 @@ public class Praktikumsstunde {
     public void setAufgaben(String[] aufgaben) {
         this.aufgaben = aufgaben;
     }
+
+    @Override
+    public String toString() {
+        return thema;
+    }
+
+    
 }

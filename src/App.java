@@ -33,6 +33,7 @@ public class App {
         //Vorlesungsstunde
         List<Vorlesungsstunde> vorlesungsstundenListe = new ArrayList<>();
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
+        vorlesungsstundenListe.add(softwareentwicklung2);
         softwareentwicklung2.displayDetails();
 
         //Lehrveranstaltung

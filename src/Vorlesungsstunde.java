@@ -53,4 +53,12 @@ public class Vorlesungsstunde {
     public void setRaum(String raum) {
         this.raum = raum;
     }
+
+    @Override
+    public String toString() {
+        return thema;
+
+    }
+
+
 }
