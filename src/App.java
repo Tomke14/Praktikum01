@@ -27,8 +27,9 @@ public class App {
         
         
         String[] tasks = {"Task 1", "Task 2", "Task 3"};
+        System.out.println("Praktikumsstunde:");
         Praktikumsstunde p1 = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", tasks);
-       p1.printPraktikumsstunde();
+        p1.printPraktikumsstunde();
        
        //Vorlesungsstunde
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
