@@ -15,8 +15,8 @@ public class App {
         //Praktikumsstunde
         String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
       
-        Praktikumsstunde praktikumsstundeStatistik = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", uebungsaufgaben);
-        praktikumsstundeStatistik.printPraktikumsstunde();
+        Praktikumsstunde praktikumsstundeSWE = new Praktikumsstunde("Softwareentwicklung", "17.04.2024", "10:30", "G115", uebungsaufgaben);
+        praktikumsstundeSWE.printPraktikumsstunde();
 
         //Lehrveranstaltung
         String[] studierende = {"Max", "Moritz", "Erika"};
@@ -27,6 +27,7 @@ public class App {
        
        //Vorlesungsstunde
         Vorlesungsstunde softwareentwicklung2 = new Vorlesungsstunde("Java", "17.04.2024", "10:30", "G115");
+        softwareentwicklung2.displayDetails();
 
         //Studierender
         Studierender max = new Studierender("Max", 12345, "Informatik");
