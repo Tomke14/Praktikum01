@@ -1,4 +1,8 @@
-public class Course {
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
+public class Lehrveranstaltung {
     private String titel;
     private String dozierende;
     private List<String> studierende;
@@ -6,13 +10,14 @@ public class Course {
     private int praktikumsstunden;
 
     // Constructor
-    public Course(String titel, String dozierende, List<String> studierende, int vorlesungsstunden, int praktikumsstunden) {
-        this.title = titel;
+    public Lehrveranstaltung(String titel, String dozierende, String[] studierende2, int vorlesungsstunden, int praktikumsstunden) {
+        this.titel = titel;
         this.dozierende = dozierende;
-        this.studierende = studierende;
+        this.studierende = Arrays.asList(studierende2);
         this.vorlesungsstunden = vorlesungsstunden;
         this.praktikumsstunden = praktikumsstunden;
     }
+
 
     public void addStudierende(String studierendeName) {
         studierende.add(studierendeName);
@@ -83,11 +88,20 @@ public class Course {
         this.vorlesungsstunden = vorlesungsstunden;
     }
 
-    public int getLabHours() {
-        return labHours;
+    public int getPraktikumsstunden() {
+        return praktikumsstunden;
     }
 
     public void setPraktikumsstunden(int praktikumsstunden) {
         this.praktikumsstunden = praktikumsstunden;
+    }
+
+
+    public void printLehrveranstaltung() {
+        System.out.println("Lehrveranstaltung Details:");
+        System.out.println("Titel: " + titel);
+        System.out.println("Studierende: " + studierende);
+        System.out.println("Vorlesungsstunden: " + vorlesungsstunden);
+        System.out.println("Praktikumsstunden: " + praktikumsstunden);
     }
 }

@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.List;
+
 public class App {
     
     public static void main(String[] args) throws Exception {
@@ -8,6 +11,21 @@ public class App {
         miller.feedback();
         miller.printFeedback(miller.getFeedbackArray());
 
+
+        //Praktikumsstunde
+        String[] uebungsaufgaben = {"Übungsblatt 1", "Übungsblatt 2", "Übungsblatt 3"};
+        
+        Praktikumsstunde praktikumsstundeStatistik = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", uebungsaufgaben);
+        praktikumsstundeStatistik.printPraktikumsstunde();
+
+        //Lehrveranstaltung
+        String[] studierende = {"Max", "Moritz", "Erika"};
+        List<String> studierendeList = Arrays.asList(studierende);
+        Lehrveranstaltung softwareentwicklung2 = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierende, 2, 2);
+        softwareentwicklung2.printLehrveranstaltung();
+
+        
+        
         String[] tasks = {"Task 1", "Task 2", "Task 3"};
         Praktikumsstunde p1 = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", tasks);
        p1.printPraktikumsstunde();
