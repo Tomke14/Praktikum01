@@ -21,8 +21,8 @@ public class App {
         //Lehrveranstaltung
         String[] studierende = {"Max", "Moritz", "Erika"};
         List<String> studierendeList = Arrays.asList(studierende);
-        Lehrveranstaltung softwareentwicklung2 = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierende, 2, 2);
-        softwareentwicklung2.printLehrveranstaltung();
+        Lehrveranstaltung softwareentwicklung2LF = new Lehrveranstaltung("Softwareentwicklung 2", "Prof. Meier", studierende, 2, 2);
+        softwareentwicklung2LF.printLehrveranstaltung();
 
         
         
