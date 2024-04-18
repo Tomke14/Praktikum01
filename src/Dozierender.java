@@ -11,13 +11,14 @@ public class Dozierender {
     int anzahlstudis = 0; 
     public void feedback () {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Guten Tag liebe Studierende, ich möchte Sie um Ihr Feedback bitten. Wie würden Sie meine Vorlseung auf einer Skala von 1-10 bewerten (wobei 1 sehr schlecht und 10 sehr gut wäre)?");              
+        System.out.println("Guten Tag liebe Studierende, ich möchte Sie um Ihr Feedback bitten. Wie würden Sie meine Vorlesung auf einer Skala von 1-10 bewerten (wobei 1 sehr schlecht und 10 sehr gut wäre)?");              
         int feedback = scanner.nextInt();
         feedbackArray[anzahlstudis]=feedback;
         anzahlstudis++;
     }
     
     public void printFeedback (int[]feedbackArray){
+        System.out.println("Feedback der Studierenden:")
         for (int i=0; i<anzahlstudis; i++){
             System.out.println(feedbackArray[i]);
         }
