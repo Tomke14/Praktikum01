@@ -99,7 +99,7 @@ public class Lehrveranstaltung {
 
 
     public void printLehrveranstaltung() {
-        System.out.println("Lehrveranstaltung Details:");
+        System.out.println("Lehrveranstaltung");
         System.out.println("Titel: " + titel);
         System.out.println("Studierende: " + studierende);
         System.out.println("Vorlesungsstunden: " + vorlesungsstunden);
