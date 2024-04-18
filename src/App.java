@@ -13,11 +13,6 @@ public class App {
         
         Praktikumsstunde p1 = new Praktikumsstunde("Statistik", "17.04.2024", "10:30", "G115", tasks);
        p1.printPraktikumsstunde();
-
-       Studierender Studi1 = new Studierender("Tomke", 1234, "UXD");
-        Studi1.frageStellen(null);
-
-        Miller.frageBeantworten();
         
     }
 }
